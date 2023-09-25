@@ -62,7 +62,7 @@ Enfin, nous conclurons ce rapport en résumant les résultats obtenus et en disc
 Le jeu de données contient 178 observations pour trois cépages de vin. Les cépages sont répartis en trois classes, la première contenant 59 observations, la deuxième 71 observations et la troisième 48 observations. Treize variables ont été mesurées pour les trois cépages.
 
 ```{r}
-wine = read_csv('wine.data.csv') %>%
+wine = read_csv('https://gitlab.com/rbarriot/datamining/-/raw/master/data/wine.data.csv') %>%
    mutate(cultivar=as.factor( c('C','M','V'))[ cultivar ] )
 head(wine)
 ```
